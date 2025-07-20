@@ -21,7 +21,7 @@ const Cart = () => {
               <div>
                 <h2 className="font-semibold">{item.title}</h2>
                 <p className="text-sm text-gray-600">
-                  ${item.price.toFixed(2)} × {item.quantity} = $
+                Rs:{item.price.toFixed(2)} × {item.quantity} = Rs:
                   {(item.price * item.quantity).toFixed(2)}
                 </p>
                 <div className="mt-1">
@@ -50,9 +50,9 @@ const Cart = () => {
           ))}
 
           <div className="text-right mt-6">
-            <p className="text-lg">Subtotal: ${total.toFixed(2)}</p>
-            <p className="text-green-700">Discount (10%): -${(total * 0.1).toFixed(2)}</p>
-            <p className="font-bold text-xl">Total: ${discounted.toFixed(2)}</p>
+            <p className="text-lg">Subtotal: Rs:{total.toFixed(2)}</p>
+            <p className="text-green-700">Discount (10%): -Rs:{(total * 0.1).toFixed(2)}</p>
+            <p className="font-bold text-xl">Total: Rs:{discounted.toFixed(2)}</p>
           </div>
         </>
       )}
