@@ -9,7 +9,6 @@ export const CartProvider = ({ children }) => {
   const addToCart = (product) => {
     const exists = cart.find((item) => item.id === product.id);
     if (exists) {
-      // Remove if exists (toggle)
       setCart(cart.filter((item) => item.id !== product.id));
     } else {
       setCart([...cart, { ...product, quantity: 1 }]);

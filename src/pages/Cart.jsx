@@ -49,7 +49,6 @@ const Cart = () => {
             </div>
           ))}
 
-          {/* Summary */}
           <div className="text-right mt-6">
             <p className="text-lg">Subtotal: ${total.toFixed(2)}</p>
             <p className="text-green-700">Discount (10%): -${(total * 0.1).toFixed(2)}</p>
